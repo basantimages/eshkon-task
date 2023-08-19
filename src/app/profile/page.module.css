@@ -1,0 +1,11 @@
+.profile-section {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 60rem) {
+  .profile-section {
+    grid-template-columns: 1fr 5fr;
+  }
+}

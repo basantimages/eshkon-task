@@ -1,0 +1,23 @@
+.header {
+  height: 3rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background: #b6c7ff;
+
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header button {
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  background: #5745fa;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  margin-inline: 1rem;
+}

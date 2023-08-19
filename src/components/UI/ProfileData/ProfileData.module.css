@@ -1,0 +1,27 @@
+.card {
+  width: 100%;
+  padding-inline: 1rem;
+  padding-top: 1.5rem;
+}
+
+.user__avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.user__avatar img {
+  border-radius: 50%;
+}
+
+.user__name {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.user__email {
+  font-size: 0.9rem;
+  text-align: center;
+  color: grey;
+}
