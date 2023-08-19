@@ -3,6 +3,7 @@
 import { signIn, useSession } from 'next-auth/react';
 import { redirect } from 'next/navigation';
 import styles from './page.module.css';
+import Image from 'next/image';
 
 export default function Home() {
   const { status } = useSession();
@@ -22,9 +23,17 @@ export default function Home() {
           }}
         >
           <div className={styles['google-icon-wrapper']}>
-            <img
+            {/* <img
               className={styles['google-icon']}
               src='https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg'
+            /> */}
+            <Image
+              src={'https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg'}
+              height={30}
+              width={30}
+              alt={'Google'}
+              quality={100}
+              className={styles['google-icon']}
             />
           </div>
           <p className={styles['btn-text']}>
