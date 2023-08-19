@@ -3,6 +3,7 @@
 import styles from './ProfileData.module.css';
 import { useSession } from 'next-auth/react';
 import { redirect } from 'next/navigation';
+import Image from 'next/image';
 
 type UserData = {
   email?: string;
@@ -27,7 +28,14 @@ const ProfileData = () => {
   return (
     <div className={styles.card}>
       <div className={styles['user__avatar']}>
-        <img src={userData.image} alt={userData.name} />
+        {/* <img src={userData.image} alt={userData.name} /> */}
+        <Image
+          src={userData.image || ''}
+          height={100}
+          width={100}
+          alt={userData.name || ''}
+          quality={100}
+        />
       </div>
       <div className={styles['user__name']}>{userData.name}</div>
       <div className={styles['user__email']}>{userData.email}</div>
