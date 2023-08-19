@@ -23,10 +23,6 @@ export default function Home() {
           }}
         >
           <div className={styles['google-icon-wrapper']}>
-            {/* <img
-              className={styles['google-icon']}
-              src='https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg'
-            /> */}
             <Image
               src={'https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg'}
               height={30}
