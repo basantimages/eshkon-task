@@ -4,7 +4,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   background: #b6c7ff;
 
   position: fixed;
@@ -12,7 +12,7 @@
   z-index: 10;
 }
 
-.header button {
+.logout-btn {
   padding: 0.4rem 0.8rem;
   cursor: pointer;
   background: #5745fa;
